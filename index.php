@@ -17,11 +17,11 @@ class Production {
     }
 }
 
+$roadhouse = new Production('Road House', 'English', 7);
+
 $dragonBallF = new Production('Dragon Ball Super: Resurrection F', 'Japanese', 6.8);
 
-$roadhouse = new Production('Road House', 'English', 7)
-
-
+$poorThings = new Production('Poor Things', 'English', 8)
 
 
 
