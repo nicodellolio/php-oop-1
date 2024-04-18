@@ -13,16 +13,27 @@ class Production {
     }
 
     /* public */ function isNowOut($language) {
-        return "$this->title is now available in $language. You better rush, because it's been rated $this->rating";
+        return "$this->title is now available in $language. You better rush, because it's been rated $this->rating!";
+    }
+
+    /* public */ function toBeDeleted() {
+        return "$this->title is gonna be available on this store for a short time yet. You better watch it before it's gone!";
     }
 }
 
 $roadhouse = new Production('Road House', 'English', 7);
 
-$dragonBallF = new Production('Dragon Ball Super: Resurrection F', 'Japanese', 6.8);
+$dragonBallF = new Production('Dragon Ball Super: Resurrection F', 'Japanese', 6);
 
-$poorThings = new Production('Poor Things', 'English', 8)
+$poorThings = new Production('Poor Things', 'English', 8);
 
 
+var_dump($roadhouse);
+var_dump($poorThings);
+var_dump($dragonBallF);
+
+echo $roadhouse -> isNowOut('French') . '<br><hr>';
+echo $dragonBallF -> isNowOut('Spanish') . '<br><hr>';
+echo $poorThings -> toBeDeleted();
 
 ?>
