@@ -36,7 +36,20 @@ $comics = array($tex, $onePiece, $superman, $apePlanet);
 </head>
 
 <body>
-
+    
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="">
+        </div>
+        <nav class="menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="logo-bol">
+            <img src="./assets/img/boolean.png" alt="" srcset="">
+        </div>
+    </header>
 
     <div class="container-fluid p-5 bg-secondary">
         <div class="row movies">
