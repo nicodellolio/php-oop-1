@@ -1,39 +1,19 @@
 <?php 
 
-class Production {
-    // public string $title;
-    // public string $language;
-    // public int $rating;
+include_once __DIR__ . '/Models/Productions.php';
+include_once __DIR__ . '/Models/Comics.php';
 
-    function __construct(public string $title, public string $language, public int $rating ){
 
-        $this->title = $title;
-        $this->language = $language;
-        $this->rating = $rating;
-    }
-
-    /* public */ function isNowOut($language) {
-        return "$this->title is now available in $language. You better rush, because it's been rated $this->rating!";
-    }
-
-    /* public */ function toBeDeleted() {
-        return "$this->title is gonna be available on this store for a short time yet. You better watch it before it's gone!";
-    }
-}
 
 $roadhouse = new Production('Road House', 'English', 7);
-
 $dragonBallF = new Production('Dragon Ball Super: Resurrection F', 'Japanese', 6);
+$poorThings = new Production('Poor Things', 'French', 8);
 
-$poorThings = new Production('Poor Things', 'English', 8);
+$tex = new Comics('Tex Classic', 'Gianluigi Bonelli', 1968, 64);
+$onePiece = new Comics('One Piece #42', 'Eiichirō Oda', 2007, 180);
+$superman = new Comics('Superman Vol.6 #13', 'Joshua Williamson', 1964, 201);
+$apePlanet = new Comics('Il Pianeta delle Scimmie - La Caduta d/Uomo', 'David F. Walker', 2012, 321);
 
-
-var_dump($roadhouse);
-var_dump($poorThings);
-var_dump($dragonBallF);
-
-echo $roadhouse -> isNowOut('French') . '<br><hr>';
-echo $dragonBallF -> isNowOut('Spanish') . '<br><hr>';
-echo $poorThings -> toBeDeleted();
+echo $superman -> availableInLibraries('Milan')
 
 ?>
