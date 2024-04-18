@@ -32,62 +32,7 @@ $comics = array($tex, $onePiece, $superman, $apePlanet);
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <style>
-        body {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        .description{
-            text-align: center;
-            margin-bottom: 1rem;
-            font-size: 5rem;
-        }
-        .movies{
-            .title{
-                text-align: center;
-                font-size: 3rem;
-                background-color: #ededed;
-                margin-bottom: 6rem;
-            }
-            .language{
-                position: absolute;
-                bottom: 1.5rem;
-                left: 1rem;
-                font-size: 1.5rem;
-            }
-            .rating{
-                position: absolute;
-                bottom: 0;
-                right: 1rem;
-                color: gold;
-                border: 5px solid black;
-                border-radius: 50%;
-                padding: 0.5rem 1.5rem;
-                background-color: grey;
-            }
-        }
-        .comics{
-            margin-top: 5%;
-            .card{
-                color: darkslategrey;
-            }
-            img{
-                height: 100%;
-                margin-bottom: 1rem;
-            }
-            .name{
-                font-size: 2rem;
-                margin-bottom: 2rem;
-                color: darkblue;
-            }
-            .pagesCount{
-                position: absolute;
-                bottom: 1rem;
-                right: 1rem;
-                font-size: 1.2rem;
-            }
 
-        }
-    </style>
 </head>
 
 <body>
@@ -114,7 +59,7 @@ $comics = array($tex, $onePiece, $superman, $apePlanet);
             }
             ?>
         </div>
-        <div class="row comics">
+        <div class="row comics mt-5">
             <div class="description">COMICS</div>
             <?php
             foreach ($comics as $comic) {

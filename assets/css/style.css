@@ -1,4 +1,58 @@
-body{
-    font-family:'Times New Roman', Times, serif;
-    background-color: blue;
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.description{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+.movies{
+    .title{
+        text-align: center;
+        font-size: 3rem;
+        background-color: #ededed;
+        margin-bottom: 6rem;
+    }
+    .language{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1rem;
+        font-size: 1.5rem;
+    }
+    .rating{
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        color: gold;
+        border: 5px solid black;
+        border-radius: 50%;
+        padding: 0.5rem 1.5rem;
+        background-color: grey;
+    }
+}
+.box-prod{
+    padding: 10rem;
+}
+
+.comics{
+    margin-top: 5%;
+    .card{
+        color: darkslategrey;
+    }
+    img{
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+    .name{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: darkblue;
+    }
+    .pagesCount{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+    }
+
 }
