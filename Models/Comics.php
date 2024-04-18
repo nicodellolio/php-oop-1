@@ -2,13 +2,14 @@
 
 class Comics{
 
-    function __construct(public string $name, public string $author, public int $pubDate, public int $pagesCount)
+    function __construct(public string $name, public string $author, public int $pubDate, public int $pagesCount, public string $cover)
     {
 
         $this->name = $name;
         $this->author = $author;
         $this->pubDate = $pubDate;
         $this->pagesCount = $pagesCount;
+        $this->cover = $cover;
     }
 
     /* public */ function availableInLibraries($city){

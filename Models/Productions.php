@@ -6,11 +6,12 @@ class Production {
     // public string $language;
     // public int $rating;
 
-    function __construct(public string $title, public string $language, public int $rating ){
+    function __construct(public string $title, public string $language, public int $rating, public string $poster ){
 
         $this->title = $title;
         $this->language = $language;
         $this->rating = $rating;
+        $this->poster = $poster;
     }
 
     /* public */ function isNowOut($language) {
@@ -21,6 +22,7 @@ class Production {
         return "$this->title is gonna be available on this store for a short time yet. You better watch it before it's gone!";
     }
 }
+
 
 // var_dump($roadhouse);
 // var_dump($poorThings);
