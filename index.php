@@ -67,6 +67,12 @@ include_once __DIR__ . '/database/db.php';
                 font-size: 3rem;
                 background-color: #ededed;
             }
+
+            .genre{
+                border: 3px solid darkblue;
+                padding: 0.5rem;
+
+            }
             .my_footer_card{
                 display: flex;
                 justify-content: space-around;
@@ -158,6 +164,8 @@ include_once __DIR__ . '/database/db.php';
                                 <h4 class="language"><?= $movie->language ?></h4>
                                 <small class="year"><?= $movie->year ?></small>
                             </div>
+
+                            <h4 class="genre"><?= $movie->genre?->name ?></h4>
 
                             <h1 class="rating"><?= $movie->rating ?></h1>
                         </div>
