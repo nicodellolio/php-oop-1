@@ -1,8 +1,14 @@
 <?php
+
+include __DIR__ . '/../Models/Genre.php';
+
+//genre new objects
+$dramatic = new Genre('Dramatic', 'Strong emotional stories, focusing on character development and intense experiences');
+
 //movie new objects
-$roadhouse = new Movie('Road House', 'English', 7, './assets/img/movies/roadhouse.jpeg', 2523000, 180, 18, 2024);
-$dragonBallF = new Movie('Dragon Ball Super: Resurrection F', 'Japanese', 6, './assets/img/movies/dbs.jpg', 869200, 125, 6, 2015);
-$poorThings = new Movie('Poor Things', 'English', 8, './assets/img/movies/poor.jpeg', 3234900, 175, 16, 2023);
+$roadhouse = new Movie('Road House', 'English', new Genre('Dramatic', 'Strong emotional stories, focusing on character development and intense experiences'),  7, './assets/img/movies/roadhouse.jpeg', 2523000, 180, 18, 2024);
+$dragonBallF = new Movie('DBS: Resurrection F', 'Japanese', new Genre('Anime', 'Japanese animations characterized by stark colorful graphics about characters in action-filled plots'), 6, './assets/img/movies/dbs.jpg', 869200, 125, 6, 2015);
+$poorThings = new Movie('Poor Things', 'English', new Genre('Adventure', 'Characters often exploring places they have not been before or doing things they have not done before.'), 8, './assets/img/movies/poor.jpeg', 3234900, 175, 16, 2023);
 $movies = array($roadhouse, $dragonBallF, $poorThings);
 
 //tvserie new objects
